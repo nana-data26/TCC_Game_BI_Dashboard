@@ -1,51 +1,87 @@
 # TCC_Game_BI_Dashboard
-Trabalho desenvolvido para TCC envolvendo coleta via API da Twitch e criação de Dashboard no PowerBI para apresentação dos dados.
+This Project was developed as a **Capstone Project for the MBA in Business Intelligence & Analytics**.
+
+PROJECT COMPLETED AND FINISHED
+
 
 #----------------------------------------------------------------#
 
-PROJETO EM CONSTRUÇÃO! - Atualizado em 06/agosto/2025
+## PROJECT OVERVIEW
 
-Esse repositório é um complemento para o desenvolvimento do Trabalho de Conclusão de Curso do MBA em Business Intelligence & Analytics da USP. 
-
-O Código já está em funcionamento, apenas necessitando de algumas melhorias, como melhor organização dos arquivos csv, chamadas de funções recorrentes e otimização de código.
-
-Há algumas adições que gostaria de fazer para praticar ainda mais o conhecimento em Data Science e Analytics, como envolver a API da Steams para análise de preço de jogos.
+This project aims to analyze data from Twitch and IGDB to identify audience patterns and game popularity using public data collected via APIs.
 
 #----------------------------------------------------------------#
 
-Objetivos do Projeto:
+## SOLUTION ARCHITECTURE
 
-Será adicionado no futuro
-
-#----------------------------------------------------------------#
-
-Tecnologias utilizadas:
-
-Será adicionado no futuro
-
-#----------------------------------------------------------------#
-
-Estrutura do Notebook:
-
-Será adicionado no futuro
+Twitch / IGDB APIs (Postman - Connection Tests)
+              ↓
+  Data Collection (Power Automate)
+              ↓
+    ETL in Python (Google Colab)
+              ↓
+      Dashboard (Power BI)
 
 #----------------------------------------------------------------#
 
-Segurança:
+## TECHNOLOGIES USED
 
-Será adicionado no futuro
+- REST APIs (Twitch / IGDB)
+- Postman (APIs Requests tests)
+- Power Automate (Automated data extraction)
+- Python (Pandas, Numpy, Requests)
+- Google Colab
+- Power BI (KPIs, DAX measures)
 
 #----------------------------------------------------------------#
 
-Resultados:
+## DATA COLLECTION
 
-Será adicionado no futuro
+- APIs Used: Twitch and IGDB.
+- Authentication Type Used: OAuth
+- Data Collection Frequency: Once per day (around 6:00 PM - UTC−03:00) from 2025 May to August
+- Types of Data Collected: Top 100 Twitch Streams (Global) and Top 100 Twitch Viewers (Brazilian)
 
 #----------------------------------------------------------------#
 
-Autora:
-Naomi Oikawa - MBA em Business Intelligence & Analytics
-Ano: 2025
+## ETL IN PYTHON
 
-Redes sociais:
+Extraction:
+    - Reading data from APIs
+
+Transformations:
+    - Data Cleaning
+    - Normalization
+    - Reconsultation via APIs (detailed information in IGDB)
+    - Handling Missing Values
+
+Load:
+    - Final Data Format (.CSV)
+    - Data Structure designed for BI consumption
+
+#----------------------------------------------------------------#
+
+## DASHBOARD
+
+To be included
+
+#----------------------------------------------------------------#
+
+## KEY INSIGHTS
+
+To be included
+
+#----------------------------------------------------------------#
+
+## LIMITATIONS AND NEXT STEPS
+
+To be included
+
+#----------------------------------------------------------------#
+
+Developed by:
+Naomi Oikawa - MBA in Business Intelligence & Analytics
+Year: 2025
+
+Social Network:
 [LinkedIn](https://www.linkedin.com/in/naomi-asofu-oikawa-6899821b3/)
